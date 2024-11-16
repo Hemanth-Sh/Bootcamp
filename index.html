@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Detection App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌧️ Rainfall & Temperature Detection App 🌡️</h1>
+        <div class="input-group">
+            <input type="text" id="locationInput" placeholder="Enter location (e.g., City, State)">
+            <button id="searchButton"><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div class="weather-info">
+            <h2 id="location"></h2>
+            <table id="weatherTable">
+                <thead>
+                    <tr>
+                        <th>Weather-info</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Current Rainfall</td>
+                        <td id="rainfall"></td>
+                    </tr>
+                    <tr>
+                        <td>Current Temperature</td>
+                        <td id="temperature"></td>
+                    </tr>
+                    <tr>
+                        <td>Current Humidity</td>
+                        <td id="humidity"></td>
+                    </tr>
+                    <tr>
+                        <td>Current Wind Speed</td>
+                        <td id="windspeed"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
